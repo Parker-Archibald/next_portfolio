@@ -8,7 +8,7 @@ module.exports = {
       backgroundImage: (theme) => ({
         homePic: "url('../styles/Pictures/HomePic.jpg')",
         aboutMePic: "url('../styles/Pictures/AboutMePic.jpg')"
-      })
+      }),
     },
   },
   plugins: [],

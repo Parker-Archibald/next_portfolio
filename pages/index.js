@@ -4,6 +4,8 @@ import { Inter } from '@next/font/google'
 import Nav from '@/components/Nav'
 import Top from '@/components/Top'
 import AboutMe from '@/components/AboutMe'
+import Skills from '@/components/Skills';
+import Projects from '@/components/Projects'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,9 +21,15 @@ export default function Home() {
       
       {/* <Nav/> */}
 
-      <Top/>
+      <div className='snap-y snap-mandatory h-screen overflow-scroll scroll-smooth'>
+        <div className='h-screen snap-start'><Top/></div>
 
-      <AboutMe/>
+        <div className='h-screen snap-start'><AboutMe/></div>
+
+        <div className='h-screen snap-start'><Skills/></div>
+
+        <div className='h-screen snap-start'><Projects/></div>
+      </div>
 
     </>
   )
