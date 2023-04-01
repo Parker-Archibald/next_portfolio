@@ -5,7 +5,9 @@ import Nav from '@/components/Nav'
 import Top from '@/components/Top'
 import AboutMe from '@/components/AboutMe'
 import Skills from '@/components/Skills';
-import Projects from '@/components/Projects'
+import Projects from '@/components/Projects';
+import ContactMe from '@/components/ContactMe';
+import SendModal from '@/components/SendModal';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,18 +21,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      {/* <Nav/> */}
+      <Nav className=''/>
 
-      <div className='snap-y snap-mandatory h-screen overflow-scroll scroll-smooth'>
-        <div className='h-screen snap-start'><Top/></div>
+      <div className='snap-y snap-mandatory h-screen overflow-y-scroll overflow-x-hidden scroll-smooth scrollbar-thin scrollbar-track-gray-0/20 scrollbar-thumb-blue-400/80'>
+        <div className='h-screen snap-start' id='top'><Top/></div>
 
-        <div className='h-screen snap-start'><AboutMe/></div>
+        <div className='h-screen snap-start' id='aboutMe'><AboutMe/></div>
 
-        <div className='h-screen snap-start'><Skills/></div>
+        <div className='h-screen snap-start' id='skills'><Skills/></div>
 
-        <div className='h-screen snap-start'><Projects/></div>
+        <div className='h-screen snap-start' id='projects'><Projects/></div>
+
+        <div className='h-screen snap-start' id='contact'><ContactMe/></div>
       </div>
 
+      <SendModal/>
     </>
   )
 }

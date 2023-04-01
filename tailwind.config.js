@@ -9,7 +9,12 @@ module.exports = {
         homePic: "url('../styles/Pictures/HomePic.jpg')",
         aboutMePic: "url('../styles/Pictures/AboutMePic.jpg')"
       }),
+      transitionProperty: {
+        'width': 'width'
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')
+  ],
 }
