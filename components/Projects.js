@@ -30,7 +30,7 @@ const Projects = () => {
                     "Designed and Developed frontend which connected to a REST API that I built.",
                     "Pulled information from a MySQL database.",
                     "Handled it's own password hashing and login verification."
-                ]}/>
+                ]} link=''/>
                 <ProjectCard image='/lyrics-app.png' projectName='Lyric finder' position='Full Stack Web Developer' tech={['/nextjs.png', '/tailwindLogo.png', '/JSLogo.png']}
                 points={[
                     "Connected to Genius Lyric API.",

@@ -24,6 +24,7 @@ const Skills = () => {
                     <Skill icon='/githubLogo.png' title='Github'/>
                     <Skill icon='/tailwindLogo.png' title='Tailwind'/>
                     <Skill icon='/postmanLogo.png' title='Postman'/>
+                    <Skill icon ='/nextjs.png' title='NextJS'/>
                 </div>
             </div>
         </motion.div>
