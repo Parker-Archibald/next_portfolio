@@ -25,12 +25,13 @@ const Projects = () => {
                     "Stored data in Firebase and Firebase Storage.",
                     "Utilized Next.js and TailwindCSS to style the frontend.",
                 ]} link='https://insta-clone-red-ten.vercel.app/'/>
-                <ProjectCard image='/relieLogin.png' projectName='Reli Energy' position='Designer/Developer' tech={['/mysqlLogo.png', '/reactLogo.png', '/JSLogo.png', '/css3Logo.png', '/postmanLogo.png']}
+                <ProjectCard image ='/sorting_visualizer.png' projectName='Sorting Visualizer' position='Web Developer' tech={['/JSLogo.png', '/reactLogo.png', '/css3Logo.png']}
+                link='https://sort-visualizer-opal.vercel.app/'
                 points={[
-                    "Designed and Developed frontend which connected to a REST API that I built.",
-                    "Pulled information from a MySQL database.",
-                    "Handled it's own password hashing and login verification."
-                ]} link=''/>
+                    'Implemented fucntions to create random arrays and render those arrays using css.',
+                    'Wrote sleeper functions to delay animations.',
+                    'Sorted array using popular sorting algorithms - Bubble, Selection, Quick and Insertion.'
+                ]}/>
                 <ProjectCard image='/lyrics-app.png' projectName='Lyric finder' position='Full Stack Web Developer' tech={['/nextjs.png', '/tailwindLogo.png', '/JSLogo.png']}
                 points={[
                     "Connected to Genius Lyric API.",
@@ -38,6 +39,12 @@ const Projects = () => {
                     "Allow users to search API to find lyrics."
                 ]}
                 link='https://song-lyrics-ten.vercel.app/'/>
+                <ProjectCard image='/relieLogin.png' projectName='Reli Energy' position='Designer/Developer' tech={['/mysqlLogo.png', '/reactLogo.png', '/JSLogo.png', '/css3Logo.png', '/postmanLogo.png']}
+                points={[
+                    "Designed and Developed frontend which connected to a REST API that I built.",
+                    "Pulled information from a MySQL database.",
+                    "Handled it's own password hashing and login verification."
+                ]} link=''/>
                 <ProjectCard image='/slackClone.png' projectName='Slack Clone' position='Web Developer' tech={['/JSLogo.png', '/reactLogo.png', '/firebaseLogo.png', 'css3Logo.png']}
                 points={[
                     "Stored room and chat data in Firebase database.",
