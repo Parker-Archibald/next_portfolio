@@ -40,7 +40,7 @@ const Nav = () => {
             initial={{x:-200, opacity: 0}}
             whileInView={{x:-10, opacity: 100}}
             transition={{duration: .25}}
-            className="bg-white w-60 h-screen z-10 fixed text-black">
+            className="bg-white w-60 h-screen z-10 fixed text-black rounded-r-xl">
                 <div className="text-right mr-2 font-bold cursor-pointer" onClick={() => setNav(false)}>X</div>
                 <div className="flex flex-col items-center">
                     <Link href='#top'><img src='/profile.png' className="w-24 h-24 rounded-full mt-8"/></Link>

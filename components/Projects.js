@@ -9,10 +9,15 @@ const Projects = () => {
         whileInView={{opacity: 1}}
         transition={{duration: 1.5}}
         className='h-screen flex flex-col items-center relative overflow-hidden text-left
-        md:flex-row max-w-full p-x-10 justify-evenly mx-auto'>
+         max-w-full p-x-10 justify-evenly mx-auto md:flex-row' >
 
             <h3 className='absolute top-12 uppercase tracking-[6px] text-gray-500 text-xl'>Recent Projects</h3>
             <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-0 scrollbar-thumb-blue-400'>
+                <ProjectCard image='/favcomponents.png' projectName='My Favorite Components' position='Web Developer' tech={['/JSLogo.png', '/nextjs.png', 'firebaseLogo.png', 'tailwindLogo.png']}
+                points={[
+                    'Designed each component.',
+                    'Created each component with Nextjs, Reacjs and tailwindCSS.'
+                ]} link='https://favorite-components.vercel.app/'/>
                 <ProjectCard image='/huluClone.png' projectName='Hulu Clone' position='Web Developer' tech={['/nextjs.png', '/tailwindLogo.png', '/JSLogo.png']} 
                 points={[
                     "Connected to TMDB's database.",
